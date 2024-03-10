@@ -46,6 +46,11 @@ narrado. Atenção para a forma de definir a ordem de chegada.
 
 * Proximas atualizações:
   * Mostrar quem foi o campeão e qual a ordem (1°, 2° ... 5° lugar)
+    
+* Exemplo de como está a saída nesta versão do projeto:
+  
+    ![image](https://github.com/thiagosilvaantenor/ThreadExercicio-4-SO1/assets/99970279/e7c16abc-3dd6-4f17-875a-0a46ec2bef96)
+
 
 ## Tecnologias
 - [Java](https://www.oracle.com/br/java/)
