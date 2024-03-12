@@ -1,6 +1,6 @@
 package controller;
 
-public class ThreadEx3Controller extends Thread {
+public class ThreadEx4Controller extends Thread {
 //	Fazer uma aplicação de uma corrida de sapos, com 5 Threads, cada Thread
 //	controlando 1 sapo. Deve haver um tamanho máximo para cada pulo do sapo (em
 //	metros) e a distância máxima para que os sapos percorram. A cada salto, um sapo pode
@@ -17,7 +17,7 @@ public class ThreadEx3Controller extends Thread {
 	private final double distanciaCorrida = 300;
 	private double tempo;
 
-	public ThreadEx3Controller(int sapo, double distanciaSaltoMax) {
+	public ThreadEx4Controller(int sapo, double distanciaSaltoMax) {
 		this.sapo = sapo;
 		this.distanciaSaltoMax = distanciaSaltoMax;
 	}
@@ -46,13 +46,15 @@ public class ThreadEx3Controller extends Thread {
 	public void run() {
 		Boolean chegada = false;
 		double percorreu;
+		tempo = System.nanoTime();
 		pular();
 		while (!chegada) {
 			pular();
 			percorreu = getDistanciaPercorrida();
 			if (percorreu >= getDistanciaCorrida()) {
 				System.out.println("O sapo N° " + sapo + " chegou a linha de chegada!");
-				tempo = System.nanoTime();
+				double fim = System.nanoTime();
+				tempo = tempo - fim;
 				tempo = tempo / Math.pow(10, 9);
 				chegada = true;
 			}
@@ -60,15 +62,10 @@ public class ThreadEx3Controller extends Thread {
 	}
 
 	private void pular() {
-		try {
-			sleep((sapo + 1));
-		} catch (InterruptedException e) {
-			System.err.println(e.getMessage());
-		}
 		double salto = (Math.random() * distanciaSaltoMax) + 1;
 		setDistanciaPercorrida(salto);
 		salto = Math.round(salto);
-		System.out.println("O sapo N° " + sapo + " pulou: " + salto + " metros!");
+		System.out.println("O sapo N° " + sapo + " pulou: " + salto + " metros. Ele já percorreu " + Math.round(getDistanciaPercorrida()));
 	}
 
 }
