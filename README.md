@@ -30,32 +30,26 @@ Caso queira ver os outros exercícios:
 <!--te-->
 
 ## Exercício 4
-Fazer uma aplicação de uma corrida de sapos, com 5 `Threads`, cada Thread
+* Fazer uma aplicação de uma corrida de sapos, com 5 `Threads`, cada Thread
 controlando 1 sapo. Deve haver um tamanho máximo para cada pulo do sapo (em
-metros) e a distância máxima para que os sapos percorram. A cada salto, um sapo pode
-dar um salto de 0 até o tamanho máximo do salto (valor aleatório).<br>Após dar um salto, 
-a Thread, para cada sapo, deve mostrar no console, qual foi o tamanho do salto e quanto
-o sapo percorreu. Assim que o sapo percorrer a distância máxima, a Thread deve
-apresentar que o sapo chegou e qual sua colocação.<br>
-Dica: O exercício deve ser resolvido todo em console, ou seja, como se estivesse sendo
+metros) e a distância máxima para que os sapos percorram.
+* A cada salto, um sapo pode dar um salto de 0 até o tamanho máximo do salto (valor aleatório).
+* Após dar um salto, a Thread, para cada sapo, deve mostrar no console, qual foi o tamanho do salto e quanto
+o sapo percorreu.<br>Assim que o sapo percorrer a distância máxima, a Thread deve apresentar que o sapo chegou e qual sua colocação.
+* Dica: O exercício deve ser resolvido todo em console, ou seja, como se estivesse sendo
 narrado. Atenção para a forma de definir a ordem de chegada.
 
 
 ## Status do projeto
-🚧Em construção🚧
-
-* Proximas atualizações:
-  * Mostrar quem foi o campeão e qual a ordem (1°, 2° ... 5° lugar)
+  ✅Concluido✅
     
 * Exemplo de como está a saída nesta versão do projeto:
   
-    ![image](https://github.com/thiagosilvaantenor/ThreadExercicio-4-SO1/assets/99970279/e7c16abc-3dd6-4f17-875a-0a46ec2bef96)
-
+    ![image](https://github.com/thiagosilvaantenor/ThreadsExercicio-4-SO1/assets/99970279/917e3a42-9f2d-4ed6-94ac-37535ae2b8f7)
 
 ## Tecnologias
 - [Java](https://www.oracle.com/br/java/)
   - [Thread](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html)
-  - [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
 
 ## Agradecimentos
 Agradeço ao professor da disciplina de Sistemas Operacionais 1, [Leandro Colevati dos Santos](https://www.leandrocolevati.com.br/index.jsp), por todo o aprendizado passado.
