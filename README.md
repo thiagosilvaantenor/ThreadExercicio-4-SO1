@@ -44,9 +44,12 @@ narrado. Atenção para a forma de definir a ordem de chegada.
 ## Status do projeto
   ✅Concluido✅
     
+* Classe `ThreadEx4Controller` gera os sapos e guarda seus atributos (tamanho maximo do pulo, id, o quanto percorreu e o tempo que terminou)
+* Classe `GanhadoresController` verifica o tempo dos sapos e gera a lista de vencedores (1° lugar .. 5° lugar)
 * Exemplo de como está a saída nesta versão do projeto:
   
-    ![image](https://github.com/thiagosilvaantenor/ThreadsExercicio-4-SO1/assets/99970279/917e3a42-9f2d-4ed6-94ac-37535ae2b8f7)
+    ![image](https://github.com/thiagosilvaantenor/ThreadsExercicio-4-SO1/assets/99970279/f3343480-b7d1-4a4f-8ab6-31be34844956)
+
 
 ## Tecnologias
 - [Java](https://www.oracle.com/br/java/)
