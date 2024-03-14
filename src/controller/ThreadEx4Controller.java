@@ -48,16 +48,25 @@ public class ThreadEx4Controller extends Thread {
 		double percorreu;
 		tempo = System.nanoTime();
 		pular();
+		percorreu = getDistanciaPercorrida();
 		while (!chegada) {
-			pular();
-			percorreu = getDistanciaPercorrida();
 			if (percorreu >= getDistanciaCorrida()) {
 				System.out.println("O sapo N° " + sapo + " chegou a linha de chegada!");
 				double fim = System.nanoTime();
 				tempo = tempo - fim;
 				tempo = tempo / Math.pow(10, 9);
 				chegada = true;
+				break;
 			}
+			percorreu = getDistanciaPercorrida();
+			
+			try {
+				sleep(1000);
+			} catch (InterruptedException e) {
+				System.err.println(e.getMessage());
+			}
+			
+			pular();
 		}
 	}
 
